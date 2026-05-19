@@ -5,11 +5,12 @@
   "type": "module",
   "description": "A respectful reactivation toolkit for businesses with stale customer lists.",
   "scripts": {
-    "test": "node --test",
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
     "start": "python3 -m http.server 4173",
-    "validate": "node --test",
-    "certify": "node --test test/v3.test.js",
-    "test:all": "node --test"
+    "validate": "npm test",
+    "certify": "npm run build && node --test test/v3.test.js",
+    "test:all": "npm test"
   },
   "keywords": [
     "digital-equity",
@@ -22,14 +23,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/29-email-revival-kit.git"
+    "url": "git+https://github.com/volta-npo/email-revival-kit.git"
   },
-  "homepage": "https://volta-npo.github.io/29-email-revival-kit/",
+  "homepage": "https://volta-npo.github.io/email-revival-kit/",
   "bugs": {
-    "url": "https://github.com/volta-npo/29-email-revival-kit/issues"
+    "url": "https://github.com/volta-npo/email-revival-kit/issues"
   },
   "author": "Volta OSS Division <volta.npo@gmail.com>",
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "@types/node": "^24.0.0"
   }
 }
