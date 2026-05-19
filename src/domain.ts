@@ -76,7 +76,11 @@ export const domain = {
     "Reintro sequence generated",
     "Subject lines generated",
     "Unsubscribe language added",
-    "Send plan exported"
+    "Send plan exported",
+    "Consent source and jurisdiction recorded",
+    "Suppression import/export completed",
+    "Frequency cap enforced",
+    "Compliance variant selected"
   ],
   "artifacts": [
     "Email sequence",
@@ -89,5 +93,32 @@ export const domain = {
     "No purchased-list workflow",
     "Frequency cap enforced"
   ],
-  "sampleClient": "Oak & Olive Cafe"
+  "sampleClient": "Oak & Olive Cafe",
+  "modules": [
+    { "name": "Consent basis manager", "description": "Consent source, timestamp, jurisdiction, proof, and permitted campaign type for each list segment." },
+    { "name": "Suppression center", "description": "Import/export suppression lists, unsubscribe proof, bounce source, and segment exclusion reason." },
+    { "name": "Frequency limiter", "description": "Campaign cadence, cool-down, max sends, and reactivation stop conditions." },
+    { "name": "Compliance variants", "description": "CAN-SPAM, GDPR, CASL, unsubscribe, sender identity, and data minimization checklists." }
+  ],
+  "saas": {
+    "playbooks": [
+      "Consent audit before campaign",
+      "Suppression import/export workflow",
+      "Frequency cap review",
+      "Jurisdiction-specific compliance checklist"
+    ],
+    "automations": [
+      "Suppression CSV export",
+      "Consent-source warnings",
+      "Frequency cap calculation",
+      "Compliance variant selection"
+    ],
+    "revenueModel": "Lifecycle email workspace with compliance add-ons, segment seats, and campaign export packs",
+    "integrationTargets": [
+      "Mailchimp lists",
+      "Klaviyo segments",
+      "HubSpot suppression lists",
+      "CSV CRM imports"
+    ]
+  }
 };
