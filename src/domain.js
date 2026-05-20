@@ -116,7 +116,7 @@ export const domain = {
         { "name": "Segment health dashboard", "description": "Tracks list source, dormancy age, engagement, consent basis, bounce risk, and suppression status." },
         { "name": "Deliverability risk scorer", "description": "Flags stale lists, spammy copy, missing identity, high frequency, and weak unsubscribe language." },
         { "name": "A/B test planner", "description": "Subject, preview text, offer, segment, and send-time experiments with learning capture." },
-        { "name": "Sunset automation map", "description": "Defines stop rules, re-permission prompts, suppression updates, and post-campaign list hygiene actions." },
+        { "name": "Sunset automation map", "description": "Defines stop rules, re-permission guidance, suppression updates, and post-campaign list hygiene actions." },
         { "name": "ESP migration checklist", "description": "Mailchimp, Klaviyo, HubSpot, and CSV import fields with opt-out mapping and proof requirements." },
         { "name": "Revenue attribution notes", "description": "Owner-safe method for recording replies, bookings, sales, donations, and qualitative reactivation outcomes." }
     ],
